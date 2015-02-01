@@ -20,12 +20,7 @@ var program = require('commander');
 
 program.version(require('./package.json').version);
 
-program
-  .command('web')
-  .description('start a web server')
-  .action(function(cmd, options) {
-    require('./server');
-  });
+require('./commands/web')(program);
 
 program.parse(process.argv);
 
