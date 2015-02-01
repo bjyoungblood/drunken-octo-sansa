@@ -8,7 +8,7 @@ module.exports = function(server) {
       log : '*',
       response : '*',
       error : '*',
-      ops : '*'
+      ops : '*',
     })
   ];
 
@@ -16,7 +16,7 @@ module.exports = function(server) {
     register : require('good'),
     options : {
       opsInterval : 30000,
-      reporters : reporters
+      reporters : reporters,
     },
   }).catch(function(err) {
     throw err;
