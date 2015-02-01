@@ -17,6 +17,7 @@ function startServer() {
 
   require('plugins/auth')(server);
   require('plugins/good')(server);
+  require('plugins/status')(server);
 
   server.start(function() {
     console.log(server.info);
