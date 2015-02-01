@@ -1,0 +1,23 @@
+pgdata:
+  image: busybox:latest
+  volumes:
+    - "/var/lib/postgresql/data"
+
+db:
+  image: postgres:9.4
+  environment:
+    POSTGRES_PASSWORD: db
+    POSTGRES_USER: db
+    POSTGRES_DATABASE: db
+  volumes_from:
+    - pgdata
+  ports:
+    - "5432:5432"
+
+pgweb:
+  image: sosedoff/pgweb:0.4.0
+  links:
+    - db
+  ports:
+    - "8082:8082"
+  command: --listen 8082 --bind 0.0.0.0
