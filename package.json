@@ -1,0 +1,47 @@
+{
+  "name": "drunken-octo-sansa",
+  "version": "0.0.0",
+  "description": "Yep, you heard me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjyoungblood/drunken-octo-sansa.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjyoungblood/drunken-octo-sansa/issues"
+  },
+  "homepage": "https://github.com/bjyoungblood/drunken-octo-sansa",
+  "dependencies": {
+    "avery": "^0.1.1",
+    "bluebird": "^2.9.4",
+    "boom": "^2.6.1",
+    "confidence": "^1.0.0",
+    "good": "^5.1.1",
+    "good-console": "^4.1.0",
+    "hapi": "^8.1.0",
+    "joi": "^5.1.0",
+    "lodash": "^3.0.1",
+    "moment": "^2.9.0",
+    "numeral": "^1.5.3"
+  },
+  "devDependencies": {
+    "6to5": "^3.2.1",
+    "6to5-core": "^3.2.1",
+    "6to5-loader": "^3.0.0",
+    "gulp": "^3.8.10",
+    "gulp-livereload": "^3.6.0",
+    "gulp-sass": "^1.3.2",
+    "gulp-webpack": "^1.2.0",
+    "json-loader": "^0.5.1",
+    "marty": "^0.8.9",
+    "react": "^0.12.2",
+    "react-router": "^0.11.6",
+    "store": "^1.3.17",
+    "webpack": "^1.5.3"
+  }
+}
