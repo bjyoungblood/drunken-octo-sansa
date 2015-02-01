@@ -10,5 +10,9 @@
   <body>
     <div id="app-container"></div>
     <script src="{%=o.htmlWebpackPlugin.assets.main%}"></script>
+
+    {% if (o.htmlWebpackPlugin.options.development) { %}
+      <script src="http://localhost:8080/webpack-dev-server.js"></script>
+    {% } %}
   </body>
 </html>

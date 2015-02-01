@@ -67,6 +67,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template : 'client/index.html',
+      development : (process.env.NODE_ENV === 'development'),
     })
   ]
 };
