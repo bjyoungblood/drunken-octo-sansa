@@ -9,6 +9,7 @@ var PublicLayout = React.createClass({
     return (
       <div>
         <h3>Welcome to the demo application!</h3>
+        <a className="btn btn-primary">Test</a>
       </div>
     );
   }
