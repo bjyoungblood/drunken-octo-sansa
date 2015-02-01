@@ -20,6 +20,7 @@ var program = require('commander');
 
 program.version(require('./package.json').version);
 
+require('./commands/db')(program);
 require('./commands/web')(program);
 
 program.parse(process.argv);
