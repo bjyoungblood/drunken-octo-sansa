@@ -3,8 +3,6 @@ JSHINT = node_modules/.bin/jshint
 WEBPACK = node_modules/webpack/bin/webpack.js
 DEVSERVER = node_modules/webpack-dev-server/bin/webpack-dev-server.js
 
-export NODE_ENV = test
-
 .PHONY: build dev lint
 
 build:
