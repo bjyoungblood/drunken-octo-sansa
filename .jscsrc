@@ -36,6 +36,7 @@
   "requireSpacesInAnonymousFunctionExpression": {
     "beforeOpeningCurlyBrace": true
   },
+  "requireParenthesesAroundIIFE": true,
   "disallowMultipleVarDecl": true,
   "requireBlocksOnNewline": true,
   "disallowEmptyBlocks": true,

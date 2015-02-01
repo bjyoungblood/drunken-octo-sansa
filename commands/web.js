@@ -29,4 +29,4 @@ module.exports = function(program) {
     .command('web')
     .description('start a web server')
     .action(startServer);
-}
+};

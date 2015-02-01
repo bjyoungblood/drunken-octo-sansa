@@ -10,11 +10,9 @@ module.exports = function(server) {
       server.auth.strategy('token', 'jwt', {
         key : 'key',
         validateFunc : validate,
-      })
+      });
     })
     .catch(function(err) {
-      if (err) {
-        throw err;
-      }
+      throw err;
     });
 };

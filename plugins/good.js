@@ -19,8 +19,6 @@ module.exports = function(server) {
       reporters : reporters
     },
   }).catch(function(err) {
-    if (err) {
-      throw err;
-    }
+    throw err;
   });
 };
