@@ -11,6 +11,8 @@ try {
     'HOST',
     'PORT',
   ]);
+
+  process.env.DATABASE_URL = process.env.POSTGRES_URL;
 } catch (err) {
   console.error(err.message.substr(0, err.message.length - 1));
   process.exit(1);
