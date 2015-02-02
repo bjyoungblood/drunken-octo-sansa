@@ -33,7 +33,6 @@
     "lodash": "^3.0.1",
     "mariner": "^0.3.0",
     "moment": "^2.9.0",
-    "node-pg-migrate": "0.0.7",
     "numeral": "^1.5.3",
     "pg": "^4.2.0"
   },
