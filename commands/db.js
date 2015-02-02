@@ -7,7 +7,7 @@ module.exports = function(program) {
     .command('migrate <action...>')
     .description('manage database migrations')
     .action(function(cmd, options) {
-      fork('node_modules/.bin/pg-migrate', cmd, {
+      fork('node_modules/.bin/mariner', cmd, {
         cwd : process.cwd(),
         stdio : 'inherit',
         env : {
