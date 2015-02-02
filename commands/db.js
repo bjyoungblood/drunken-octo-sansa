@@ -13,7 +13,7 @@ module.exports = function(program) {
         env : {
           DATABASE_URL : process.env.POSTGRES_URL,
           NODE_ENV : process.env.NODE_ENV,
-        }
+        },
       });
     });
 };

@@ -6,13 +6,13 @@ module.exports = function(server) {
   };
 
   server.register(require('hapi-auth-jwt'))
-    .then(function() {
+    .then(() => {
       server.auth.strategy('token', 'jwt', {
         key : 'key',
         validateFunc : validate,
       });
     })
-    .catch(function(err) {
+    .catch((err) => {
       throw err;
     });
 };

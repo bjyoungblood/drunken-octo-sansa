@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
+require('6to5/register');
+
 // Validate environment
 
 try {

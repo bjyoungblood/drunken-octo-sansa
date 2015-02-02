@@ -18,7 +18,7 @@ module.exports = function(server) {
       opsInterval : 30000,
       reporters : reporters,
     },
-  }).catch(function(err) {
+  }).catch((err) => {
     throw err;
   });
 };
