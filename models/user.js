@@ -20,23 +20,21 @@ var UserProto = Avery.Model({
     id : null,
     email : null,
     password : null,
-    firstName : null,
-    lastName : null,
+    lastLogin : null,
+    createdAt : null,
+    updatedAt : null,
+    isEnabled : null,
   },
 
   validate : Joi.object().keys({
     id : Joi.number(),
     email : Joi.string().email(),
     password : Joi.string(),
-    firstName : Joi.string().allow(''),
-    lastName : Joi.string().allow(''),
+    lastLogin : Joi.date().allow(null),
+    createdAt : Joi.date(),
+    updatedAt : Joi.date(),
+    isEnabled : Joi.boolean(),
   }),
-
-  virtuals : {
-    fullName : function() {
-      return this.get('firstName') + ' ' + this.get('lastName');
-    },
-  },
 
 });
 
