@@ -3,16 +3,16 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry  : [ 'webpack/hot/dev-server', './client/main.jsx' ],
+  entry : [ 'webpack/hot/dev-server', './client/main.jsx' ],
   target : 'web',
-  output: {
-    path: 'dist',
-    filename: 'js/main-[hash].js'
+  output : {
+    path : 'dist',
+    filename : 'js/main-[hash].js',
   },
   resolve : {
     root : __dirname,
     modulesDirectories : [ 'node_modules' ],
-    extensions : [ '', '.js', '.jsx' ]
+    extensions : [ '', '.js', '.jsx' ],
   },
   module : {
     noParse : /\.min\.js/,
@@ -20,18 +20,18 @@ module.exports = {
       {
         test : /\.jsx|js$/,
         exclude : /node_modules/,
-        loader : '6to5-loader'
+        loader : '6to5-loader',
       },
       {
         test : /\.json$/,
-        loader : 'json-loader'
-      }
-    ]
+        loader : 'json-loader',
+      },
+    ],
   },
-  plugins: [
+  plugins : [
     new HtmlWebpackPlugin({
-      filename: 'index.html',
+      filename : 'index.html',
       template : 'client/index.html',
-    })
-  ]
+    }),
+  ],
 };
